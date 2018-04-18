@@ -14,12 +14,15 @@ Summary: AutoRest swagger generator Python client runtime.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/msrest-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/msrest-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/msrest-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/msrest-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msrest/badges/version.svg)](https://anaconda.org/conda-forge/msrest)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/msrest/badges/downloads.svg)](https://anaconda.org/conda-forge/msrest)
+[![Conda Recipe](https://img.shields.io/badge/recipe-msrest-green.svg)](https://anaconda.org/conda-forge/msrest)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/msrest.svg)](https://anaconda.org/conda-forge/msrest)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/msrest.svg)](https://anaconda.org/conda-forge/msrest)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/msrest.svg)](https://anaconda.org/conda-forge/msrest)
 
 Installing msrest
 =================
