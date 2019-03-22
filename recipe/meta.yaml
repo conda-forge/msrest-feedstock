@@ -1,6 +1,6 @@
 {% set name = "msrest" %}
-{% set version = "0.6.4" %}
-{% set sha256 = "5dadd54bec98d52cd9f43fb095015c346135b8cafaa35f24c7309cc25d3ad266" %}
+{% set version = "0.6.6" %}
+{% set sha256 = "947e9155fb55bda98340e99c15e4115a268ff69aee0007aaa54b7bf05018029b" %}
 
 package:
   name: {{ name|lower }}
