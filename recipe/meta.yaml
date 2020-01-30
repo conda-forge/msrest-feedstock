@@ -1,6 +1,6 @@
 {% set name = "msrest" %}
-{% set version = "0.6.10" %}
-{% set sha256 = "f5153bfe60ee757725816aedaa0772cbfe0bddb52cd2d6db4cb8b4c3c6c6f928" %}
+{% set version = "0.6.11" %}
+{% set sha256 = "40faff88e151d393e29512e58b27d141974d6a963e63e4a340fc0ceb13c15f37" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
