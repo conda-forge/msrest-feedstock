@@ -1,6 +1,6 @@
 {% set name = "msrest" %}
-{% set version = "0.6.10" %}
-{% set sha256 = "f5153bfe60ee757725816aedaa0772cbfe0bddb52cd2d6db4cb8b4c3c6c6f928" %}
+{% set version = "0.6.14" %}
+{% set sha256 = "f52f880a2145c075f436083ee9a274ddc54c62181e4c41c9ac11520fbae547e5" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   summary: AutoRest swagger generator Python client runtime.
-  
+
 extra:
   recipe-maintainers:
     - ivoflipse
