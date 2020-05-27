@@ -40,7 +40,7 @@ about:
   home: https://github.com/Azure/msrest-for-python
   license: MIT
   license_family: MIT
-  license_file: 
+  license_file: LICENSE.md
   summary: AutoRest swagger generator Python client runtime.
   
 extra:
