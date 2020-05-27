@@ -1,45 +1,48 @@
 {% set name = "msrest" %}
 {% set version = "0.6.14" %}
-{% set sha256 = "f52f880a2145c075f436083ee9a274ddc54c62181e4c41c9ac11520fbae547e5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: f52f880a2145c075f436083ee9a274ddc54c62181e4c41c9ac11520fbae547e5
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - python
-    - setuptools
     - pip
   run:
-    - python
-    - requests >=2.14
-    - requests-oauthlib >=0.5.0
-    - isodate >=0.6.0
     - certifi >=2017.4.17
+    - isodate >=0.6.0
+    - python
+    - requests >=2.16
+    - requests-oauthlib >=0.5.0
+
 test:
   imports:
     - msrest
     - msrest.authentication
     - msrest.exceptions
     - msrest.pipeline
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Azure/msrest-for-python
   license: MIT
   license_family: MIT
+  license_file: LICENSE.md
   summary: AutoRest swagger generator Python client runtime.
 
 extra:
   recipe-maintainers:
-    - ivoflipse
+    - marcelotrevisani
