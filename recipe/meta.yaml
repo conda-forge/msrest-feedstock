@@ -1,5 +1,5 @@
 {% set name = "msrest" %}
-{% set version = "0.6.14" %}
+{% set version = "0.6.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f52f880a2145c075f436083ee9a274ddc54c62181e4c41c9ac11520fbae547e5
+  sha256: 30092bfd4945323072497e9d281484e6b68100a63256783df42db9cf94518c57
 
 build:
   number: 0
