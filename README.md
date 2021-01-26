@@ -5,11 +5,9 @@ Home: https://github.com/Azure/msrest-for-python
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/msrest-feedstock/blob/master/LICENSE.txt)
 
 Summary: AutoRest swagger generator Python client runtime.
-
-
 
 Current build status
 ====================
