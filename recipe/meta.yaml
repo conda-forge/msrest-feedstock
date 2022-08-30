@@ -16,13 +16,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
+    - azure-core >=1.24.0
     - certifi >=2017.4.17
     - isodate >=0.6.0
-    - python
-    - requests >=2.16
+    - python >=3.5
+    - requests >=2.16,<3.dev0
     - requests-oauthlib >=0.5.0
 
 test:
