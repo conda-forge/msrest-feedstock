@@ -1,13 +1,13 @@
 {% set name = "msrest" %}
-{% set version = "0.6.21" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72661bc7bedc2dc2040e8f170b6e9ef226ee6d3892e01affd4d26b06474d68d8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  sha256: 2210a4dff54c6d3af30bf2fc10db206a1bc5b097c654ce54b0ecd633d762afdf
 
 build:
   number: 0
@@ -16,13 +16,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
+    - azure-core >=1.24.0
     - certifi >=2017.4.17
     - isodate >=0.6.0
-    - python
-    - requests >=2.16
+    - python >=3.5
+    - requests >=2.16,<3.dev0
     - requests-oauthlib >=0.5.0
 
 test:
